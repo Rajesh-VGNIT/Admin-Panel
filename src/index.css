@@ -11,3 +11,499 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100vh;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #fff;
+}
+
+.main{
+  display: flex;
+  height: auto;
+}
+
+
+/* .container{
+  flex-grow: 1;
+  padding: 2em;
+  background-image: radial-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .8)), url('../public/logo192.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+} */
+.title{
+  font-size: 3em;
+}
+.info{
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 1.5em;
+  color: rgb(224, 224, 224);
+}
+/* .btn{
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  padding: .75em 1em;
+  font-size: 1em;
+  letter-spacing: 1px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .4);
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: rgb(134, 49, 0);
+  color: #fff;
+} */
+
+.sidebar{
+  width: 18.4rem;
+  padding-top: 30px;
+  padding-left: 10px;
+  flex-shrink: 0;
+  background-color: rgba(22, 22, 22, 1);
+  height: 100vh;
+  position: fixed;
+  overflow: auto;
+}
+
+
+.sidebar-item{
+  padding: .75em 1em;
+  display: block;
+  transition: background-color .15s;
+  border-radius: 5px;
+}
+.sidebar-item:hover{
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.sidebar-title{
+  display: flex;
+  font-size: 0.9em;
+  justify-content: space-between;
+}
+.sidebar-title span i{
+  display: inline-block;
+  width: 1.5em;
+}
+.sidebar-title .toggle-btn{
+  cursor: pointer;
+  transition: transform .3s;
+}
+.sidebar-item.open > .sidebar-title .toggle-btn{
+  transform: rotate(180deg);
+}
+.sidebar-content{
+  padding-top: .25em;
+  height: 0;
+  overflow: hidden;
+}
+
+.sidebar-item.open > .sidebar-content{
+  height: auto;
+}
+
+.sidebar-item.plain{
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+}
+.sidebar-item.plain:hover{
+  text-decoration: underline;
+  /* text-decoration: none; */
+}
+.sidebar-item.plain li a.active{
+  color: blue;
+}
+.sidebar-item.plain i{
+  display: inline-block;
+  width: 1.7em;
+}
+
+/* ==================Home css=================== */
+.container{
+  color:black;
+  width: 100%;
+  padding: 10px 20px;
+}
+textarea{
+  border:1.5px solid #aaa;
+  border-radius: 3px;
+}
+input{
+  border:1.5px solid #aaa;
+  border-radius: 3px;
+}
+select{
+  border:1.5px solid #aaa;
+  border-radius: 3px;
+}
+
+/* ==================userManagement css=================== */
+label {
+  font-weight: 600;
+  color: #666;
+}
+.user{
+  border:1px solid #aaa;
+  width: 97%;
+}
+.user ul{
+ display:flex;
+ gap:30px;
+ padding-top: 10px;
+ margin-left: -2rem;
+}
+.user ul li{
+ list-style: none;
+ display:flex;
+ gap:30px;
+}
+.box8{
+box-shadow: 0px 0px 5px 1px #999;
+}
+.mx-t3{
+margin-top: -3rem;
+}
+label{
+  font-weight: 600;
+  color: #666;
+  padding: 10px 0 10px 0 !important;
+}
+
+input{
+  padding-left: 6px;
+}
+
+.txg{
+  display: flex;
+}
+.txg1{
+ margin-left: -100px;
+}
+table{
+  padding-left: 10px;
+  border-collapse: collapse;
+}
+td,th{
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+ td span{
+  cursor:pointer;
+ }
+ .butt button{
+  border:none;
+ }
+ /* ===================blacklistnumber css==================== */
+ .blacklist textarea{
+  width:50rem;
+  height:12.5rem;
+  margin-right: 1.2rem;
+  padding: 10px 15px;
+ }
+ .btnn button{
+  margin-left:12.1rem;
+  margin-top: -3rem;
+ }
+ .black p{
+  margin-left:12.2rem;
+  margin-top: -1.6rem;
+  font-size: 14px;
+ }
+ .glob textarea{
+  width: 30rem;
+  padding-left:5px;
+ }
+ .glob label{
+  margin-top: -10px;
+ }
+  /* ===================ManageNotification css==================== */
+  .manage1 textarea{
+    width: 30rem;
+    height:5rem;
+    margin-left: 5rem;
+    padding-left: 5px;
+   }
+ .manage1 select{
+  width: 30rem;
+  margin-left: 4.5rem;
+ }
+ .manage input{
+  margin-left: 5.2rem;
+ }
+ .manage1 input{
+  margin-left: 1rem;
+ }
+ .manage2 select{
+  width: 30rem;
+  margin-left: -0.3rem;
+ }
+ .manage3{
+  float:right;
+  margin-right:21rem;
+  margin-top:2rem;
+ }
+  /* ===================Change Password css==================== */
+  .change1 input{
+    width: 30rem;
+    margin-left: 5rem;
+    padding-left: 5px;
+   }
+   .change2 input{
+    width: 30rem;
+    margin-left: 4.6rem;
+    padding-left: 5px;
+   }
+   .change3 input{
+    width: 30rem;
+    margin-left: 0.7rem;
+    padding-left: 5px;
+   }
+   .form-label{
+    margin-left: 20px;
+   }
+    /* ===================ManageGeneralSetting css==================== */
+    .manage4{
+      width:30.3rem;
+      height:38px;
+      border:1.5px solid #ced4da;
+      outline: none;
+      border-radius:6px;
+    }
+
+    /* ===================Login css==================== */
+    .log{
+      margin-left: 18%;
+  }
+  .log h1{
+    color:black;
+  }
+  .log1{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  
+  }
+  .log1_left img{
+    padding: 10px ;
+    width:300px;
+    height:300px;
+  }
+  .log1_left p{
+      width: 90%;
+      color:black;
+  }
+  .log1_right{
+      margin-top: 30px;
+      width: 320px;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px 15px;
+     
+  }
+  .log1_right h1{
+     margin-left: 90px;
+     font-size: 30px;
+  }
+  
+  .log1_right1 input{
+      /* margin: 10px; */
+      margin-left: -0px;
+      border-radius: 5px;
+      padding-left: 5px;
+      width: 270px;
+      height: 40px;
+  }
+  .log1_right1 p{
+    color:black;
+  }
+  
+  .loginform p{
+      float: right;
+      margin-right: 20px;
+  }
+  .loginform h6{
+      margin-top: 40px;
+      color:black;
+  }
+  
+  .handler input{
+      margin-top: 20px;
+      border: 1.5px solid rgb(144, 22, 22);
+      border-radius: 5px;
+      width: 17rem;
+      height: 40px;
+      font-size: 1.1rem;
+      color: #fff;
+      background-color: brown;
+  }
+  .handler2 input{
+    margin-top: 15px;
+    border: 1.5px solid rgb(144, 22, 22);
+    border-radius: 3px;
+    width: 17rem;
+    height: 40px;
+    font-size: 1rem;
+    color: black;  
+} 
+  .hadlr1{
+      margin-left: 290px;
+       margin-top: 20px;
+       color:black;
+  }
+  
+  .login {
+      width: 400px;
+      margin-left: 18%;
+      background: #fff;
+      border: 1px solid #dddfe2;
+      box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+      border-radius: 8px;
+      padding: 1rem;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .login > input {
+      border-radius: 8px;
+      border: 2px solid #dddfe2;
+      outline: none;
+      color: #1d2129;
+      margin: 0.5rem 0;
+      padding: 0.5rem 0.75rem;
+      width: 92%;
+      font-size: 1rem;
+  }
+  
+  .login > .button {
+      background: #1877f2;
+      border: 1px solid #1877f2;
+      color: #fff;
+      font-size: 1.25rem;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border-radius: 8px;
+      outline: none;
+      cursor: pointer;
+  }
+  @media (max-width: 768px) {
+      .log1 {
+          display: block;  
+      }
+      .log1_right h1 {
+          margin-left: 180px;
+          font-size: 25px;
+      }
+      .log1_right {
+          display:block;
+          width: 460px !important;
+      }
+      .loginform label{
+          margin-left: 20px;
+      }
+      .log1_right1 input {
+         margin-left: 20px;
+         width: 390px !important;
+      }
+      .loginform h6 {
+          display:block;
+          margin-left: 21px;
+      }
+      .handler input {
+          width: 24.4rem !important;
+          margin-left: 20px;
+      }
+      .log1_left{
+         display:none;
+      }
+      .hadlr1{
+          margin-left: 122px !important;
+           margin-top: 20px;
+      }
+  }
+  /* ===================Register css==================== */
+  
+.register {
+  width: 400px;
+  margin-left: 18%;
+  background: #fff;
+  border: 1px solid #dddfe2;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  padding: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.register > input {
+  border-radius: 8px;
+  border: 2px solid #dddfe2;
+  outline: none;
+  color: #1d2129;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.75rem;
+  width: 92%;
+  font-size: 1rem;
+}
+
+.register > .button {
+  background: #1877f2;
+  border: 1px solid #1877f2;
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+.handler1 input{
+  margin-top: 15px;
+  border: 1.5px solid rgb(144, 22, 22);
+  border-radius: 3px;
+  width: 17rem;
+  height: 40px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: brown;
+}
+.handler2 input{
+  margin-top: 15px;
+  border: 1.5px solid rgb(144, 22, 22);
+  border-radius: 3px;
+  width: 17rem;
+  height: 40px;
+  font-size: 1rem;
+  color: black;  
+}
+@media (max-width: 768px) {
+  .log1_right1 label{
+      margin-left: 20px;
+  }
+  .handler1 input {
+      width: 24.3rem !important;
+      margin-left: 20px;
+  }
+  .handler2 input {
+      width: 24.3rem !important;
+      margin-left: 20px;
+  }
+}
+
+

@@ -1,0 +1,388 @@
+[
+    {
+        "title": "ADMINISTRATION",
+        "icon": "bi-person-circle",
+        "childrens": [
+            {
+                "title": "User Adminstration",
+                "icon": "bi-person-fill",
+                "path": "/",
+                "childrens": [
+                    {
+                        "title": "User Management",
+                        "icon": "bi-people-fill",
+                        "path": "/UserManagement"
+                    },
+                    {
+                        "title": "Site User Tree List",
+                        "icon": "bi-twitter",
+                        "path": "/siteusertreelist"
+                    },
+                    {
+                        "title": "Manage User Groups",
+                        "icon": "bi-people-fill",
+                        "path": "/manageusergroup"
+                    },
+                    {
+                        "title": "Client Detail List",
+                        "icon": "bi-people-fill",
+                        "path": "/clientdetaillist"
+                    },
+                    {
+                        "title": "Client Transactions",
+                        "icon": "bi-pencil-square",
+                        "path": "/clienttransactions"
+                    },
+                    {
+                        "title": "Rollback Transactions",
+                        "icon": "bi-pencil-square",
+                        "path": "/rollbacktransation"
+                    }
+                ]
+                
+            },
+           
+            {
+                "title": "Approval",
+                "icon": "bi-patch-check-fill",
+                "childrens": [
+                    {
+                        "title": "All Sender Id Request",
+                        "icon": "bi-person-check-fill",
+                        "path": "/allsenderidrequest"
+                    },
+                    {
+                        "title": "All Template Request",
+                        "icon": "bi-send-fill",
+                        "path":"/alltemplaterequest"
+                    }
+                ]
+            },
+            {
+                "title": "Settings",
+                "icon": "bi-gear-fill",
+                "childrens": [
+                    {
+                        "title": "Black list numbers",
+                        "icon": "bi-dash-circle",
+                        "path":"/blacklistnumbers"
+                    },
+                    {
+                        "title": "Global spam keywords",
+                        "icon": "bi-envelope-exclamation-fill",
+                        "path":"/globalspamkeywords"
+                    },
+                    {
+                        "title": "User spam keywords",
+                        "icon": "bi-envelope-exclamation",
+                        "path":"/userspamkeywords"
+                    },
+                    {
+                        "title": "Site branding",
+                        "icon": "bi-instagram",
+                        "path":"/sitebranding"
+                    },
+                    {
+                        "title": "Manage notification",
+                        "icon": "bi-bell-fill",
+                        "path":"/managenotification"
+                    },
+                    {
+                        "title": "Manage Emails",
+                        "icon": "bi-envelope-fill",
+                        "path":"/manageemail"
+                    },
+                    {
+                        "title": "Change password",
+                        "icon": "bi-key",
+                        "path":"/changepassword"
+                    }
+                ]
+            },
+            {
+                "title": "General Setting",
+                "icon": "bi-gear",
+                "childrens": [
+                    {
+                        "title": "Manage General Settings",
+                        "icon": "bi-gear",
+                        "path":"/managegeneralsetting"
+                    },
+                    {
+                        "title": "Force Password Change",
+                        "icon": "bi-key",
+                        "path":"/forcepasswordchange"
+                    },
+                    {
+                        "title": "Force Lockdown",
+                        "icon": "bi-shield-check",
+                        "path":"/forclockdown"
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "title": "CONFIGURATION",
+        "icon": "bi-gear-fill",
+        "childrens": [
+            {
+                "title": "Gateway Configuration",
+                "path": "/login",
+                "icon": "bi-gear-fill",
+                "childrens": [
+                    {
+                        "title": "SMPP Gateways (MT/MO)",
+                        "path": "/SMPPGATEWAY",
+                        "icon": "bi-router"
+                    },
+                    {
+                        "title": "Gateway Error Codes",
+                        "path": "/GatewayErrorCodes",
+                        "icon": "bi-exclamation-octagon"
+                    },
+                    {
+                        "title": "OA/DA Normalization Rules",
+                        "path": "/OA/DANormalizationRules",
+                        "icon": "bi-layers"
+                    }
+                ]
+            },
+            {
+                "title": "Interface Configuration",
+                "path": "/register",
+                "icon": "bi-gear-fill",
+                "childrens": [
+                    {
+                        "title": "Manage Interface",
+                        "path": "/ManageInterface",
+                        "icon": "bi-gear"
+                    },
+                    {
+                        "title": "HTTP Connector",
+                        "path": "/HTTPConnector"
+                    },
+                    {
+                        "title": "Esme Blacklist rule",
+                        "path": "/EsmeBlacklistrule"
+                    },
+                    {
+                        "title": "ESME Client List",
+                        "path": "/ESMEClientList"
+                    }
+                    
+                ]
+            },
+            {
+                "title": "Routing Rule Manager",
+                "path": "/forgot-password",
+                "icon": "bi-gear-fill",
+                "childrens": [
+                    {
+                        "title": "MT Routing Rules",
+                        "path": "/MTRoutingRules"
+                    },
+                    {
+                        "title": "Routing Rules Simulator",
+                        "path": "/RoutingRulesSimulator"
+                    }
+                    
+                ]
+            },
+            {
+                "title": "Manage Service",
+                "path": "/ManageService"
+            },
+            {
+                "title": "Housekeeping",
+                "path": "/Housekeeping"
+            }
+        ]
+    },
+    {
+        "title": "REPORTING",
+        "icon": "bi-stack",
+        "childrens": [
+            {
+                "title": "Live Web Traffic Report",
+                "path": "/LiveWebTrafficReport"
+            },
+            {
+                "title": "Gateway Queue",
+                "path": "/GatewayQueue"
+            },
+            {
+                "title": "Sent Report",
+                "path": "/SentReport"
+            },
+            {
+                "title": "Sent Count",
+                "path": "/SentCount"
+            },
+            {
+                "title": "Download Report",
+                "path": "/DownloadReport"
+            },
+            {
+                "title": "ESME reporting",
+                "childrens": [
+                    
+                    {
+                        "title": "Sent Count",
+                        "path": "/SentCount"
+                    }
+                    
+                ]
+            },
+            {
+                "title": "Business Insight",
+                "childrens": [
+                    
+                    {
+                        "title": "Top 10 Senders",
+                        "path": "/Top10Senders"
+                    },
+                    {
+                        "title": "Gateway Wise Count",
+                        "path": "/GatewayWiseCount"
+                    },
+                    {
+                        "title": "Gateway Wise Profit",
+                        "path": "/GatewayWiseProfit"
+                    },
+                    {
+                        "title": "User Wise Profit",
+                        "path": "/UserWiseProfit"
+                    },
+                    {
+                        "title": "Gateway Status Reports",
+                        "path": "/GatewayStatusReports"
+                    }
+                ]
+            },
+            {
+                "title": "View Alert",
+                "path": "/ViewAlert"
+            }
+        ]
+    },
+    {
+        "title": "MONITORING",
+        "icon": "bi-display-fill",
+        "childrens": [
+            {
+                "title": "SMPP Clients",
+                "path": "/SMPPClients",
+                 "childrens": [
+                        {
+                            "title": "PDU Logs",
+                            "path": "/PDULogs"
+                        },
+                        {
+                            "title": "Event Viewer(Client)",
+                            "path": "/EventViewer(Client)"
+                        },
+                        {
+                            "title": "Event Viewer(DLR)",
+                            "path": "/EventViewer(DLR)"
+                        }
+                    ]
+                },
+            
+            {
+                "title": "SMPP Server",
+                "path": "/SMPPServer"   
+            },
+            {
+                "title": "PDU Logs",
+                "path": "/PDULogs"   
+            },
+            {
+                "title": "Event Viewer (Server)",
+                "path": "/EventViewer(Server)"   
+            },
+            {
+                "title": "Debug Tools",
+                "path": "/DebugTools",
+                 "childrens": [
+                        {
+                            "title": "Audit Logs",
+                            "path": "/AuditLogs"
+                        }
+                    ]
+                }
+        ]
+    },
+    {
+        "title": "BILLING",
+        "icon": "bi-wallet2",
+        "childrens": [
+            {
+                "title": "Master Data Manager ",
+                "icon": "bi-facebook",
+                "childrens": [
+                    {
+                        "title": "Manage Countries",
+                        "path": "/ManageCountries"
+                    },
+                    {
+                        "title": "Manage MCC/MNC ",
+                        "path": "/ManageMCC/MNC "
+                    },
+                    {
+                        "title": "Manage Prefix",
+                        "path": "/ManagePrefix"
+                    },
+                    {
+                        "title": "Verify Prefix",
+                        "path": "/VerifyPrefix"
+                    },
+                    {
+                        "title": "Manage Gateway Price",
+                        "path": "/ManageGatewayPrice"
+                    }
+                ]
+            },
+            {
+                "title": "Rate Plan Manager",
+                "path": "/RatePlanManager"
+            },
+            {
+                "title": "Currency Manager",
+                "path": "/CurrencyManager"
+            }
+        ]
+    },
+    {
+        "title": "UTILITY",
+        "icon": "bi-files",
+        "childrens": [
+            {
+                "title": "Message Queue",
+                "icon": "bi-star-fill"
+            },
+            {
+                "title": "Message Trace",
+                "icon": "bi-voicemail"
+            },
+            {
+                "title": "View Throughput",
+                "icon": "bi-eye"
+            },
+            {
+                "title": "Bucket System",
+                "icon": "bi-paint-bucket"
+            },
+            {
+                "title": "PDU Capture",
+                "icon": "bi-sliders"
+            }
+        ]
+    },
+    {
+        "title": "NOTIFICATIONS",
+        "icon": "bi-bell-fill",
+        "path": "/support"
+    }
+]
